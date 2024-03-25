@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/header.css">
+   
+   
+   <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+      .Benifits-container{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+         flex-wrap: wrap;
+         gap:10px
+      }
+      .Benifits-card{
+        min-width: 100px; 
+        width: 100%;
+        max-width: 800px; 
+         display: flex; 
+        
+         padding: 8px ;
+      } 
+       .Benifits-card-img{
+        height: 160px;
+        width: 180px;
+        padding: 8px;
+       } 
+       .B4{
+        font-size: x-large; margin-left:18px
+       }
+       .B5{
+        font-size: 19px; margin-left: 20px;
+        text-align: justify;
+       }
+       .btn{
+        height: 50px;
+        width: 130px;
+        background-color: #3284c7;
+        border-radius: 8px;
+        color: antiquewhite;
+        font-weight: 500;
+        font-size: 15px;
+        border: none;
+       }
+       .btn:hover{
+        background-color: transparent;
+        border: 2px solid #3284c7;
+        cursor: pointer;
+        transition: 0.2s;
+
+       }
+       .tag{
+        height: 50px;
+        width: 130px;
+        background-color: #3284c7;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        border: none;
+        color: aliceblue;
+       }
+       .tag:hover{
+        background-color: transparent;
+        border: 2px solid #3284c7;
+        cursor: pointer;
+        transition: 0.2s;
+        color: black;
+       }
+       .header2> a:hover{
+     color: #3284c7;
+     transition: 0.2s;
+       }
+       .box{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+       }
+       .box:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        cursor: pointer;
+        transition: 0.3s;
+       }
+       .box2{
+        width: 360PX;background-color: rgba(0, 255, 255, 0); box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;  overflow: hidden;
+       }
+       .box2:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        cursor: pointer;
+        transition: 0.3s;
+       }
+       .box3{
+        width: 360px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;  overflow: hidden;
+       }
+       .box3:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        cursor: pointer;
+        transition: 0.3s;
+       }
+
+       
+@media (max-width:530px){
+    .Benifits-card{
+        flex-direction: column;
+        align-items: center;
+       max-width: 400px; 
+    }
+    .B4{
+    text-align: center;
+    }
+       .B5{
+        margin-left: 0px;
+       }
+}
+        .header1{
+            width: 180px; flex-shrink: 0;
+        }
+        .header-con{
+            background-color: aliceblue; display: flex; align-items: center; padding:8px 20px ; gap:8px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            position: fixed;
+            width: 100%;
+        }
+        .header2{
+            display: flex; ; justify-content: space-between; min-width:500px ; width: 100%; max-width: 580px; 
+        }
+        .header3{
+            display: flex; ; justify-content: space-between;  
+             
+           
+        }
+a{
+    color: black;
+    text-decoration: none;
+}
+@media (max-width : 850px){
+    .header-con{
+        display: none;
+    }
+}
+        
+@media (min-width :850px){
+    #header{
+        display: none;
+    }
+}
+.Benifits-container{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    
+    </style>
+
+
+</head>
+<body >
+    <div class="header-con">
+        <div class="header1">
+         <img src="./pics/clipmine_logo_beta_226x50.png"  style="width: 100%;"/>
+     </div>
+         <div class="header2">
+         <a href="#Home">Home</a>
+        <a href="#Discover">Discover</a>
+         <a href="#Features">Features</a>
+         <a href="#Benifits">Benifits</a>
+         <a href="#Collections">Collections</a>
+        <a href="#Clipmine">Clipmine</a>
+        <a href="#Supports">Supports</a>
+     </div>
+     <div style="flex-grow: 1;"></div>
+ 
+         <div class="header3">
+             
+             <p><a href="#">Log_in</a></p>
+            
+     
+         </div>
+     
+     </div>
+<header id="header">
+    
+    <div class="header"></div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Discover">Discover</a></li>
+      <li><a href="#Features">Features</a></li>
+      <li><a href="#Benifits">Benifits</li>
+      <li><a href="#Collections">Collections</a></li>
+      <li><a href="#Clipmine">Clipmine</a></li>
+      <li><a href="#Supports">Supports</a></li>
+    </ul>
+  </div>
+
+</header>
+
+
+
+<section id="Home">
+    <div style="background-image: url(./abc.jpg);background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;" >
+       <div style="padding: 10px; height: 100vh;display: flex; justify-content:center;flex-direction:column;gap:10px; color: white; align-items: center; " >    
+       
+        <p style="font-size: xx-large;min-width: 300px;width:100% ;max-width: 410px;text-align: center; line-height: 1.2;"><b>A Better Video Experiance
+            for the Web</b></p>
+            <p  style="min-width: 300px;width:100% ;max-width: 500px;text-align: center; line-height: 1.2;">ClipMine enables bloggers, creators and enthusiasts to tag content inside online
+                videos and create a more engaging video experiance.</p> 
+               
+                <button onclick="alert('navigate')" class="btn">Sign up</button>
+            </div>
+        
+    </div>
+</section>
+
+
+
+<section id="Discover">
+    <h1 style="text-align: center; margin-top: 30px; margin-bottom: 50px;">Help your viewers discover what matters most to them!</h1>
+
+
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; row-gap: 20px; column-gap: 10px; padding: 0 10px; ">
+        
+        
+        <div style="width: 360px;background-color: rgba(0, 0, 0, 0);  border-radius: 8PX;  overflow: hidden;" class="box">
+        <img src="./pics/video-fallout_560x374.png" style="height: 220px; width: 100%; object-fit: cover;" />
+        
+        
+        
+        <div style="padding: 10px 10px 20px 10px">
+        <p>@13:34 Fallout Gameplay demo all about Bill...</p>
+        <div style="display: flex; align-items: center; gap:8px">
+            <img src="./pics/icons8-price-tag-50.png" style="height: 21px;" />
+            <p>3 people tagged</p>
+            <img src="./pics/icons8-forward-arrow-24.png" style="height: 21px;" />
+            <p>200</p>
+        </div>
+        <div style="background-color: rgb(204, 196, 196);display: flex; padding: 8px 0px 8px 4px; margin-top: 5px; border-radius: 8px; ">  Embed &#8814; &#62;
+            <img src=".//pics/icons8-forward-arrow-26.png " style="height: 20px;"/> 
+            <p>Share</p>
+
+        </div>
+    </div>
+
+
+        
+        </div>
+
+
+
+        <div class="box2" >
+        <img src=".//pics/video-emma_280x187.png"  style="height: 220px; width: 100%; object-fit: cover;">
+        <div style="padding: 10px 10px 20px 10px">
+        <p>@01:59 Hook: Emma Stone Greatest thing about Bill...</p>
+        <div style="display: flex;">
+            <img src=".//pics/icons8-price-tag-50.png" style="height: 21px;" >
+            <p>25 people tagged</p>
+            <img src=".//pics/icons8-forward-arrow-26.png" style="height: 21px;"/>
+            <p>100</p>
+        </div>
+        <div style="background-color: rgb(204, 196, 196);display: flex; padding: 8px 0px 8px 4px; margin-top: 5px; border-radius: 8px; ">
+        <div style="display: flex;"> Embed &#8814; &#62;
+            <img src=".//pics/icons8-forward-arrow-26.png" style="height: 21px;"/>
+            <p>Share</p>
+        </div>
+    </div>
+
+
+        </div>
+      
+        
+        </div>
+
+        <div class="box3">
+        <img src="./pics/video-gatesjobs_560x374.png" style="height: 220px; width: 100%;object-fit: cover;" >
+        <div style="padding: 10px 10px 20px 10px">
+        <p>@01:00:20 Greatest thing about Bill and Steve's Relationship...</p>
+        <div style="display: flex;">
+            <img src="./pics/icons8-price-tag-50.png" style="height: 21px;"/>
+            
+            <p>30 people tagged</p>
+            <img src="./pics/icons8-forward-arrow-24.png" style="height: 21px;"/>
+            <p>100</p>
+        </div>
+
+        
+        <div style="background-color: rgb(204, 196, 196);display: flex; padding: 8px 0px 8px 4px; margin-top: 5px; border-radius: 8px; ">
+        <div style=" display: flex;">  Embed &#8814; &#62;
+            <img src=".//pics/icons8-forward-arrow-26.png" style="height: 21px;" >
+            <p> Share</p>
+        </div>
+            
+
+        </div>
+        
+    
+        
+        
+        </div>
+    </div>
+</section>
+
+
+
+<section id="Features">
+    <p style="margin-top: 30px;font-size: small; margin-bottom: 20px; margin-left: 10px; text-align: center;">ClipMine works great for sharing and embedding recorded video-game sessions, tutorials, product reviews, talk shows, speeches, lectures and sports coverage. Tryout more samples</p>
+   
+   
+   
+   
+   
+    <h1 style="text-align: center; font-size: xx-large; margin-bottom: 20px;"><b>Features</b></h1>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; row-gap: 14px; column-gap: 10px; padding-left: 10px; padding-right: 10px;">
+        <div style="width: 360px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;">
+        <img src="./features/index-sharing_300x120.png" style="height: 150px; width: 100%; padding-top: 8px;"/>
+        <p style="text-align: center; font-size: large; "><b>Meaningful Sharing</b></p>
+        <p style="padding: 8px;">ClipMine works great for sharing and embedding recorded video-game sessions, tutorials, product reviews, talk shows, speeches, lectures and sports coverage. Tryout more samples</p>
+        
+        </div>
+
+        <div style="width: 360px;  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;" >
+        <img src="./features/index-embeds_300x120.png" style="height: 150px; width: 100%; padding-top: 8px;"/>
+        <p style="text-align: center; font-size: larger;"><b>Interactive Embeds</b></p>
+        <p style="padding: 8px;">Want to enable the ClipMine experiance on your blog or Twitter feed? Just embed our Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, blanditiis </p>
+        
+        </div>
+
+
+
+
+        <div style="width: 360px;  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;">
+        <img src="./features/index-tagging_300x120.png" style="height: 150px; width: 100%; padding-top: 8px;">
+        <p style="text-align: center; font-size: larger;"><b>Smart Tagging</b></p>
+        <p style="padding: 10px; text-align: justify;">Found an interesting point in a video? On ClipMine, adding tags is not Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, repudiandae.</p>
+        </div>
+    </div>
+</section>
+
+<section id="Benifits">
+<h1 style="text-align: center; margin-top: 80px; margin-bottom: 50px; " class="B1">Benifits</h1>
+<div class="Benifits-container">    
+
+<div  class="Benifits-card" style=" box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;">
+    <img src="./benefits/index-benefit-personal_166x166.png"  class="Benifits-card-img" >
+   
+    <div>
+    <p  class="B4" ><b>Smart Tagging</b></p>
+    <p  class="B5">Found an interesting point in a video? On ClipMine, adding tags is not reserved for the video owners only - any community member can do it. In addition our smart algorithms can automatically suggest tags (in private beta) for a wide variety of videos!</p>
+    </div>
+
+    </div>
+    <div class="Benifits-card" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;">
+    <img src="./benefits/index-benefit-engagement_166x166.png" class="Benifits-card-img"/>
+    <div>
+        <p class="B4"><b>Smart Tagging</b></p>
+        <p class="B5">Found an interesting point in a video? On ClipMine, adding tags is not reserved for the video owners only - any community member can do it. In addition our smart algorithms can automatically suggest tags (in private beta) for a wide variety of videos!</p>
+
+    </div>
+    
+    </div>
+
+
+
+
+    <div class="Benifits-card" style="box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; border-radius: 8PX;">
+      <img src="./benefits/index-benefit-analytics_166x166.png" class="Benifits-card-img"/>
+      <div>
+        <p  class="B4"><b>Smart Tagging</b></p>
+        <p  class="B5">Found an interesting point in a video? On ClipMine, adding tags is not reserved for the video owners only - any community member can do it. In addition our smart algorithms can automatically suggest tags (in private beta) for a wide variety of videos!</p>
+
+
+      </div>
+    
+    
+    </div>
+</div>
+
+</section>
+
+<section id="Collections">
+    <h1 style="text-align: center; margin: 30px 0 ;"><b>ClipMine Video Collections</b></h1>
+
+
+    <div style="padding-left: 10px;padding-right: 10px;">
+   <div style="display: flex; justify-content: space-around; flex-wrap: wrap; row-gap: 14px;column-gap: 10px;  border-radius: 8PX;">
+    <div style="background-image: url(./collections/collection-startup_460x184.png); min-width: 340px; width: 100%; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; max-width: 400px;height: 180px;text-align: center;padding-top: 100px; color: aliceblue;">STARTUPS</div>
+    <div style="background-image: url(./collections/collection-ml_922x368.png); box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; min-width: 340px; width: 100%; max-width: 400px; height: 180px; text-align: center;padding-top: 100px; color: aliceblue;">MECHINE LEARNING</div>
+   </div>
+</div>
+
+</div>
+
+</section>
+
+<section id="Clipmine">
+
+    <h1 style="text-align: center; margin: 30px 0; ">You are using Clipmine</h1>
+
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap:10px;padding-left: 10px;padding-right: 10px;">
+        <div style="width: 360px; height: 160px; ">
+            <img src="./partners/partner-500startups_215x94.png" width="100%" height="160px" />
+
+        </div>
+
+        <div  style="width: 360px; height: 160px; ">
+            <img src="./partners/partner-blackbox_215x94.png"width="100%" height="100%"/>
+        </div>
+
+        <div  style="width: 360px; height: 160px; ">
+            <img src="./partners/partner-bothsides_215x94.png " width="100%" height="100%" />
+
+        </div>
+
+        <div  style="width: 360px; height: 160px; ">
+            <img src="./partners/partner-cv_215x94.png" width="100%" height="100%" >
+
+        </div>
+
+        <div  style="width: 360px; height: 160px; ">
+            <img src="./partners/partner-ucf_215x94.png" width="100%" height="100%" >
+        
+        
+        </div>
+
+
+        <div  style="width: 360px; "> 
+            <img src="./partners/partner-yc_215x94.png"  width="100%" height="100%">
+
+        </div>
+    </div>
+</section>
+   
+
+<section id="Supports">
+    <h1 style="text-align: center; font-size: xx-large; margin-top: 30px; margin-bottom: 20px;"><b>What would you like to tag</b></h1>
+    
+    
+    <div style="display: flex; justify-content: center; margin:  0 10px;">
+
+    <div style=" min-width: 300px; width: 100%; max-width: 600px;  text-align: center; display: flex;  flex-wrap: wrap; justify-content: center; gap:8px   ">
+
+        <input style="min-width: 300px; width: 100%; max-width: 450px; height: 30px; " placeholder="paste a youtube . vimo or dailymotion video url "/>
+        <button style="width: 140px; height: 30px; " class="tag">TAG NOW</button>
+
+    </div>
+
+</div>
+
+
+
+    <p style="text-align: center; font-size: xx-large; margin-top: 30px; margin-bottom: 20px;"> <b>Supported Platforms</b></p>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 30px; margin-bottom: 20px;">
+        <div><img src="./platforms/platform-html5_230x100.png" style="width: 200px;"></div>
+        <div><img src="./platforms/platform-dailymotion_230x100.png"></div>
+        <div><img src="./platforms/platform-vimeo_230x100.png"></div>
+        <div><img src="./platforms/platform-youtube_230x100.png"/></div>
+    </div>
+
+
+</section>
+
+<section>
+    <div style="display: flex; justify-content: center; background-color: black; flex-wrap: wrap;">
+        <a style="color: antiquewhite;" href="#">Contact Us</a>
+        <p style="color: antiquewhite;">|</p>
+        
+        <a style="color: aliceblue;" href="#">About  Us</a>
+    <p style="color: antiquewhite;">|</p>
+        <a style="color: aliceblue;" href="#">Blog</a>
+        <p style="color: aliceblue;">|</p>
+        <a style="color: aliceblue;" href="#">Benifits</a>
+       
+    </div>
+    <div style="display: flex; justify-content: center; background-color: black; flex-wrap: wrap;">
+        <p style="color: antiquewhite;">@2016 ClipMine, Inc</p>
+        <a style="color: aliceblue;" href="#">Terms of use Privecy Policy</a>
+    </div>
+</section>
+
+ 
+</body>
+</html>
